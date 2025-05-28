@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
+  // 移除 output: 'export' 配置，改用 next export 命令
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
-  assetPrefix: '/',
 };
 
 module.exports = nextConfig;
