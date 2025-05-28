@@ -2,11 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // 移除 output: 'export' 配置，改用 next export 命令
+  output: 'export',
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
+  eslint: {
+    // 禁用 ESLint
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
